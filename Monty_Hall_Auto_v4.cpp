@@ -43,17 +43,13 @@ int main()
 
         //if its current guess is correct, and it always switches its guess, it will always switch to the wrong guess when its current guess is correct, thus always losing
         if (guess == car_door)
-        {
             losses++;
-        }
         //if its current guess is wrong, logic says the unguessed unrevealed door is correct, so if it switches every time it will always switch to that.
         //We don't even need to simulate the switch, since we know it wins
         else
-        {
             wins++;
-        }
-        total_attempts++;
 
+        total_attempts++;
 
     }
 
